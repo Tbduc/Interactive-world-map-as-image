@@ -1,0 +1,96 @@
+body {
+  background: rgb(218,201,158);
+  background: radial-gradient(circle, rgba(218,201,158,1) 0%, rgba(207,137,52,1) 100%);
+  color: white;
+  text-shadow: 1px 1px black:
+}
+#map {
+  width: 100%;
+}
+#counter {
+  text-align: center;
+}
+
+#continentInfo {
+  position: absolute;
+  top: 100px; right: 0;
+  width: 25%;
+  background: rgba(0,0,0,0.7);
+  pointer-events: none;
+  opacity: 0;
+  color: #fff;
+}
+
+@media all and (max-width: 1024px) {
+  #map {
+    width: 100%;
+    height: auto;
+  }
+}
+@media all and (max-width: 800px) {
+  #continentInfo {
+    width: 40%;
+  }
+}
+@media all and (max-width: 750px) {
+  #continentInfo {
+    width: 100%;
+    position: static;
+    background: none;
+  }
+  #continentInfo.show p {
+    color: #000000 !important;
+    margin-bottom: 2rem;
+  }
+}
+
+@media all and (max-width: 480px) {
+  #close {
+    top: 87% !important;
+  }
+}
+#continentInfo.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+#continentInfo.hide { opacity: 0; }
+#continentInfo h1 {
+  background: hsl(240, 55%, 40%);
+  padding: .3rem;
+  padding-left: 1rem;
+  margin-top: -.5rem;
+  font-weight: 400;
+  color: white;
+}
+#continentInfo p {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+#continentInfo img {
+  width: 100%;
+}
+
+#close {
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #000000;
+  z-index: 0;
+}
+#close:hover {
+  color: navy;
+}
+
+#counter {
+  padding: 10px;
+  background-color: #cf5834;
+  color: white;
+  width: 65%;
+  margin: 10px auto;
+  display: none;
+}
