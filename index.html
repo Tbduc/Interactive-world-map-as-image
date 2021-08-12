@@ -12,37 +12,37 @@
   </style>
 </head>
 <body>
-<div class="container-fluid text-center">
-  <div class="row justify-content-center">
-    <div class="col-sm-2">
-    </div>
-    <div class="col-sm-8">
-      <h1>Welcome</h1>
-      <p>Find each continent to trigger the pop up</p>
-      <h3>Interactive image</h3>
-      <img id="map" src="map.jpg" alt="Worldmap" usemap="#worldmap" width="100%">
-      <map id="theMap" name="worldmap">
-        <area shape="poly" coords="756, 135, 932, 134, 1236, 230, 1126, 568, 969, 567, 911, 451, 869, 504, 806, 452, 754, 490, 712, 410, 739, 366" alt="Asia">
-        <area shape="poly" coords="748, 225, 726, 339, 717, 391, 648, 388, 573, 393, 564, 397, 553, 357, 571, 284, 626, 150, 684, 143, 735, 225" alt="Europe">
-        <area shape="poly" coords="0.84, 220, 22, 209, 243, 170, 256, 190, 364, 234, 394, 338, 346, 476, 300, 518, 277, 513, 207, 473, 136, 376, 40, 290, 0.84, 279" alt="America">
-        <area shape="poly" coords="1002, 369, 1128, 572, 1092.8, 579, 1108.8, 614, 1210, 683, 1177, 730, 1104.8, 714, 1004, 682, 993, 631, 1038, 594" alt="Australia">
-        <area shape="poly" coords="573, 398, 637, 389, 633, 400, 658.8, 417, 672.8, 401, 711, 410, 744, 478, 777, 492, 738, 547, 740, 596, 722, 627, 723, 641, 700, 686, 656, 690, 632, 614, 622, 552, 605, 522, 588, 529, 552, 527, 526, 488, 530, 446, 569, 397" alt="Africa">
-        <area shape="poly" coords="338, 498, 402, 528, 447, 556, 469, 577, 450, 637, 419, 658, 396, 692, 383, 716, 356, 745, 356, 791, 341, 801, 324, 770, 336, 629, 298.8, 578, 309, 516" alt="LatinAmerica">
-        <area shape="poly" coords="425, 115, 509, 123, 544, 137, 524, 142, 507, 211, 449, 235, 429, 271, 403, 262, 374, 179, 328, 179, 298, 190, 241, 153, 257.8, 131, 358, 125" alt="Greenland">
-      </map>
-      <!--<div id="coord">0</div>-->
-    </div>
-    <div class="col-sm-2">
+  <div class="container-fluid text-center">
+    <div class="row justify-content-center">
+      <div class="col-sm-2">
+      </div>
+      <div class="col-sm-8">
+        <h1>Welcome</h1>
+        <p>Find each continent to trigger the pop up</p>
+        <h3>Interactive image</h3>
+        <div id="counter"></div>
+        <img id="map" src="map.jpg" alt="Worldmap" usemap="#worldmap" width="100%">
+        <map id="theMap" name="worldmap">
+          <area shape="poly" coords="756, 135, 932, 134, 1236, 230, 1126, 568, 969, 567, 911, 451, 869, 504, 806, 452, 754, 490, 712, 410, 739, 366" alt="Asia">
+          <area shape="poly" coords="748, 225, 726, 339, 717, 391, 648, 388, 573, 393, 564, 397, 553, 357, 571, 284, 626, 150, 684, 143, 735, 225" alt="Europe">
+          <area shape="poly" coords="0.84, 220, 22, 209, 243, 170, 256, 190, 364, 234, 394, 338, 346, 476, 300, 518, 277, 513, 207, 473, 136, 376, 40, 290, 0.84, 279" alt="America">
+          <area shape="poly" coords="1002, 369, 1128, 572, 1092.8, 579, 1108.8, 614, 1210, 683, 1177, 730, 1104.8, 714, 1004, 682, 993, 631, 1038, 594" alt="Australia">
+          <area shape="poly" coords="573, 398, 637, 389, 633, 400, 658.8, 417, 672.8, 401, 711, 410, 744, 478, 777, 492, 738, 547, 740, 596, 722, 627, 723, 641, 700, 686, 656, 690, 632, 614, 622, 552, 605, 522, 588, 529, 552, 527, 526, 488, 530, 446, 569, 397" alt="Africa">
+          <area shape="poly" coords="338, 498, 402, 528, 447, 556, 469, 577, 450, 637, 419, 658, 396, 692, 383, 716, 356, 745, 356, 791, 341, 801, 324, 770, 336, 629, 298.8, 578, 309, 516" alt="LatinAmerica">
+          <area shape="poly" coords="425, 115, 509, 123, 544, 137, 524, 142, 507, 211, 449, 235, 429, 271, 403, 262, 374, 179, 328, 179, 298, 190, 241, 153, 257.8, 131, 358, 125" alt="Greenland">
+        </map>
+        <!--<div id="coord">0</div>-->
+      </div>
+      <div class="col-sm-2">
+      </div>
     </div>
   </div>
-</div>
-<div id="counter"></div>
-<footer class="container-fluid text-center">
-  <p>Coded by Duc Trung Bui</p>
-</footer>
-<div id="continentInfo">
-  <a id='close'>×</a>
-</div>
-<script src="main.js"></script>
+  <footer class="container-fluid text-center">
+    <p>Coded by Duc Trung Bui</p>
+  </footer>
+  <div id="continentInfo">
+    <a id='close'>×</a>
+  </div>
+  <script src="main.js"></script>
 </body>
 </html>
